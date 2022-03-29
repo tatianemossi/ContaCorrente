@@ -41,6 +41,22 @@ namespace ContaCorrente.ConsoleApp
             conta1.Extrato();
             Console.WriteLine();
 
+            /*3) Modifique suas classes que acessam e modificam atributos de um Funcionario
+             para utilizar as propriedades getters e setters:*/
+
+            Funcionario funcionario = new Funcionario();
+            funcionario.Nome = "Jão";
+            Console.WriteLine(funcionario.Nome);
+
+
+            //8)Como garantir que datas como 31/2/2005 não sejam aceitas pela sua classe Data?
+            if (Data.DataEhValida("31/02/2005"))
+                Console.WriteLine("Data válida");
+
+            else
+                Console.WriteLine("Data inválida");
+
+
             Console.ReadLine();
 
         }
